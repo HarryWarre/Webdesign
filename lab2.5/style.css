@@ -1,0 +1,104 @@
+.grid-container{
+    display:grid;
+    background-color: white;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+/* Header setting css */
+header{
+    grid-column: 1/7;
+    height: 100px;
+}
+header img{
+    max-width: 100%;
+    padding: 10px;
+}
+/* Setting navigation */
+nav{
+    grid-column: 1/7;
+    height: 70px;
+    background-color: aqua;
+    border-bottom: 4px solid blue ;
+    border-top:4px solid blue;
+}
+nav li{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+nav ul{
+    align-items: center;
+    margin-top: 25px;
+}
+a{
+    font-style: bold;
+}
+/* Setting container */
+.container{
+    color: white;
+    grid-area: 3/1/5/7;
+    display: grid;
+}
+.sidebar{
+    grid-area: 3/1/6/4;
+    background-color: brown;
+    margin-top: 10px;
+    float: left;
+}
+/* setting content */
+.content{
+    background-color: white;
+    width: 510px;
+    border: 2px solid red;
+    height: 200px;
+}
+.content p{
+    text-align: left;
+    margin-top: 0px;
+    
+}
+.title {
+    background-color: blue;
+    padding: 4px;
+    height: 40px;
+}
+.title p{
+    color: white;
+    text-align: left;
+}
+.details p{
+    color: black;
+    /* margin-left: -35px; */
+}
+.details{
+    background-color: white;
+    margin-bottom: 10px;
+    /* padding: 40px; */
+}
+
+/* Setting main */
+.main{
+    background-color: white;
+    margin-top: 10px;
+    grid-area: 3/4/9/7;
+    float: left;
+}
+.banner img{
+    width: 100%;
+}
+.post{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.post .details p{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+footer{
+    border: 2px solid blue;
+    grid-column: 1/7;
+    color: black;
+    grid-row-start: 9;
+    margin: 0px;
+    padding: 0px;
+}
