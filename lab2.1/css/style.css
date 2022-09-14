@@ -1,0 +1,103 @@
+#container{
+    width: 960px;
+    margin: auto;
+    background-color: yellow;
+}
+body{
+    background-color: grey;
+}
+header{
+    height: 200px;
+    padding-top: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+}
+header h1{
+    font-size: 50px;
+}
+header h3{
+    font-weight: normal;
+}
+nav{
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+.menu a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.login a{
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#main{
+    background-color: purple;
+    float: left;
+    width: 75%;
+    height: 1150px;
+}
+
+#sidebar{
+    background-color: orange;
+    float: right;
+    width: 25%;
+    height: 1150px
+}
+
+.article{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    font-family: Verdana;
+}
+
+.blog {
+    color: white;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+
+.blog2 {
+    color: white;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 15px;
+    margin-top: 350px;
+}
+.img-blog {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.img-blog2 {
+    border-image: 2px solid black;
+    margin-bottom: 3px;
+}
+
+footer {
+    background-color: aqua;
+    clear: both;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding-top: 2px;
+}
