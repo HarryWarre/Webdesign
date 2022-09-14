@@ -1,0 +1,152 @@
+body {
+    background-color: #dba899;
+    font-family: Verdana;
+    color: white;
+}
+
+#container {
+    background-color: #0b8ef2;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: #9fcff9;
+    padding: 1em;
+    color: white;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+nav li {
+    background-color: #052064;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+main {
+    clear: both;
+    padding: 10px;
+}
+
+.heading {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.content {
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+.registration {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #dad7d7;
+    margin: 0 20px;
+}
+
+nav :hover {
+    color: #FFFF00;
+}
+
+nav :active {
+    color: #880000;
+}
+
+@media only screen and (min-width: 660px) and (max-width: 830px) {
+    nav {
+        padding-top: 0em;
+        margin-top: 0em;
+        padding-bottom: 3em;
+        height: 2em;
+        background-color: rgb(221, 195, 162);
+    }
+
+    nav ul {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        padding-bottom: 1em;
+    }
+
+    nav li {
+        display: inline;
+        float: left;
+        width: 19%;
+        border-radius: 1em;
+        margin: 0.35em 0.35em;
+        padding: 1.5em 1em;
+        background-color: rgb(202, 245, 176);
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    body {
+        background:
+        linear-gradient(white, #C9E4FF);
+    }
+
+    #container {
+        width: 80%;
+    }
+
+    nav {
+        padding-top: 0.5em;
+        height: 3.1em;
+    }
+
+    nav ul {
+        margin: 0em 0em;
+        padding: 0em 0em;
+    }
+
+    nav li {
+        border-radius: 0;
+        border-top: 0.2em solid rgb(226, 159, 159);
+        border-bottom: 0.2em solid rgb(226, 159, 159);
+        width: 25%;
+        float: left;
+        margin: 0em 0em;
+        padding: 0em 0em;
+        background-color: rgb(177, 223, 163);
+        font-weight: bold;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: 1em 1em;
+    }
+}
