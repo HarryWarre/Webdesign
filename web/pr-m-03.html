@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablet.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="ad">
+            <p>$6 EXPRESS COURIER. FREE SHIPPING FOR ORDERS $200+. GIFTED HEBE TOTE BAG WITH PURCHASES $250+.</p>
+        </div>
+        <nav>
+            <a href="home.html"><img src="./images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="man.html">Man</a></li>
+                    <li><a href="woman.html">Woman</a></li>
+                    <li><a href="login_page.html">Account</a></li>
+                    <li class="mobile"><a href="cart-page.html"  class="mobile">Cart</a></li>
+                    <li><a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="container-cart">
+        <div class="body-cart">
+            <!-- cart -->
+                <div class="cart-pr" id="pr-m-03">
+                    <div class="image">
+                        <img src="./images/man3.png" alt="Jacket" >
+                    </div>
+                    <div class="infor">
+                        <p class="name" >Hoodie Helme</p>
+                        
+                        <div class="cost">$500</div>
+
+                        <div class="count">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" value="1">
+                        </div>
+                        <div class="list-size">
+                            <!-- <button class="size" onclick="active()">L</button> -->
+                            <p>Size</p>
+                            <button class="size" onclick="active(1)">M</button>
+                            <button class="size" onclick="active(2)">L</button>
+                            <button class="size" onclick="active(3)">XL</button>
+                        </div>
+                        <div class="color">
+                            <!-- <button class="size" onclick="active()">L</button> -->
+                            <p>Color</p>
+                            <button class="color-choice" id="red"></button>
+                            <button class="color-choice" id="black"></button>
+                            <button class="color-choice" id="grey"></button>
+                        </div>
+                        <div class="cart">
+                            <button class="button">
+                            <span>Add to cart</span>                    
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="tittle">
+            <p>Join Us</p>
+        </div>
+        <p>We will let you know when we have new arrivals, 
+            events and promo's don't worry we send them infrequently, 
+            just a friendly hi now and again!
+        </p>
+        <div class="formMail">
+            <form>
+                <span>
+                    <input type="email" placeholder="Enter your email:">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <!-- icon here -->
+            </form>
+        </div>
+        <div class="contact">
+            <!-- Put 3 icons here -->
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="bottom-artist">
+            <p>© 2022 VUschool</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        // navLinks.style.right = "0";
+        navLinks.style.display= "block";
+    }
+
+    function hideMenu(){
+        // navLinks.style.right = "-200px";
+        navLinks.style.display = "none";
+    }
+</script>
+
+<script>
+    let slideIndex = 1;
+
+let id_pr;
+function id_alert(id){
+    id_pr = id;
+    let background = document.getElementById(id);
+    window.focus;        
+}
+function active(n) {
+let i;
+let slides = document.getElementsByClassName("size");
+let dots = document.getElementsByClassName("size");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+
+
+dots[n-1].className += " active";
+}
+</script>
+</html>

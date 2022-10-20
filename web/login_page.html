@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablet.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="ad">
+            <p>$6 EXPRESS COURIER. FREE SHIPPING FOR ORDERS $200+. GIFTED HEBE TOTE BAG WITH PURCHASES $250+.</p>
+        </div>
+        <nav>
+            <a href="home.html"><img src="./images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="man.html">Man</a></li>
+                    <li><a href="woman.html">Woman</a></li>
+                    <li><a href="login_page.html">Account</a></li>
+                    <li class="mobile"><a href="cart-page.html"  class="mobile">Cart</a></li>
+                    <li><a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="body-login">
+
+        <div class="container-1">
+            
+                <div class="forms">
+                    <div class="form login">
+                        <span class="tittle">Login</span>
+    
+                        <form action="#">
+                            <div class="input-field">
+                                <input type="email" name="email" id="account" placeholder="Enter your email:" required>
+                                <i class="fa-solid fa-envelope icon"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="password" name="email" id="password" placeholder="Enter your password:"required>
+                                <i class="fa-solid fa-key icon"></i>          
+                                <i class="fa-sharp fa-solid fa-eye-slash showHidePw"></i>              
+                            </div>
+    
+                            <div class="checkbox-text">
+                                <div class="checkbox-content">
+                                    <input type="checkbox" id="logCheck">
+                                    <label for="logCheck" class="text">Remember me</label>
+                                </div>
+    
+                                <a href="#" class="text">Forgot password?</a>
+                            </div>
+    
+                            <div class="input-field button">
+                                <input type="button" onclick="checkLogin()" value="Login Now">
+                            </div>
+    
+                            <div class="login-signup">
+                                <span class="text">Not a member?
+                                    <a href="#" class="text signup-link">Singup now</a>
+                                </span>
+                            </div>
+    
+                        </form>
+                    </div>
+                    <!-- Registration Form -->
+                    
+                        <div class="form signup">
+                            <span class="tittle">Registration</span>
+        
+                            <form action="#">
+                                <div class="input-field">
+                                    <input type="text" name="name"  placeholder="Enter name:" required>
+                                    <i class="fa-solid fa-user"></i>                        </div>
+                                <div class="input-field">
+                                    <input type="email" name="email"  placeholder="Enter your email:" required>
+                                    <i class="fa-solid fa-envelope icon"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" class="password" name="email"  placeholder="Create a password"required>
+                                    <i class="fa-solid fa-key icon"></i>          
+                                    <i class="fa-sharp fa-solid fa-eye-slash showHidePw"></i>              
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" class="password" name="email" placeholder="Confirm a password"required>
+                                    <i class="fa-solid fa-key icon"></i>          
+                                    <i class="fa-sharp fa-solid fa-eye-slash showHidePw"></i>              
+                                </div>
+        
+                                <div class="checkbox-text">
+                                    <div class="checkbox-content">
+                                        <input type="checkbox" id="logCheck">
+                                        <label for="logCheck" class="text">I accepted all terms and conditions</label>
+                                    </div>        
+                                </div>
+        
+                                <div class="input-field button">
+                                    <input type="button" value="Signup">
+                                </div>
+        
+                                <div class="login-signup">
+                                    <span class="text">Already a member?
+                                        <a href="#" class="text login-link">Login now</a>
+                                    </span>
+                                </div>
+        
+                            </form>
+                        </div>
+                </div>
+        </div>
+    </div>
+        <footer>
+            <div class="tittle">
+                <p>Join Us</p>
+            </div>
+            <p>We will let you know when we have new arrivals, 
+                events and promo's don't worry we send them infrequently, 
+                just a friendly hi now and again!
+            </p>
+            <div class="formMail">
+                <form>
+                    <span>
+                        <input type="email" placeholder="Enter your email:">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <!-- icon here -->
+                </form>
+            </div>
+            <div class="contact">
+                <!-- Put 3 icons here -->
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="bottom-artist">
+                <p>© 2022 VUschool</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="./login.js"></script>
+</html>

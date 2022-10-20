@@ -1,0 +1,7 @@
+Trong quá trình làm, do file web khá nặng nên đôi khi thầy sử dụng sẽ có hiện tượng không load được web hoặc mất các icon.
+Trong trường hợp đó, thầy có thể F5 trang web cho nó load lại, để nhìn một cách hoàn chỉnh hơn. 
+Em cảm ơn ạ!
+Phan Hoàng Việt
+
+account: admin@gmail.com
+password: 123456
